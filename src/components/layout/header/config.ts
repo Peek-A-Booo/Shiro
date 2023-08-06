@@ -24,19 +24,16 @@ export interface IHeaderMenu {
 }
 export const headerMenuConfig: IHeaderMenu[] = [
   {
-    title: '首页1',
+    title: '首页',
     path: '/',
-    // type: 'Home',
     icon: h(FaSolidDotCircle),
     subMenu: [
       {
         title: '此站点',
-        icon: h(MdiLightbulbOn20),
         path: '/about-site',
       },
       {
         title: '自述',
-        icon: h(MdiLightbulbOn20),
         path: '/about-me',
       },
     ],
