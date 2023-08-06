@@ -2,7 +2,6 @@ import { createElement as h } from 'react'
 import type { ReactNode } from 'react'
 
 import {
-  FaSolidCircle,
   FaSolidCircleNotch,
   FaSolidComments,
   FaSolidDotCircle,
@@ -10,7 +9,6 @@ import {
   FaSolidHistory,
   FaSolidUserFriends,
   IcTwotoneSignpost,
-  IonBook,
   MdiFlask,
   MdiLightbulbOn20,
 } from '~/components/icons/menu-collection'
@@ -24,7 +22,7 @@ export interface IHeaderMenu {
 }
 export const headerMenuConfig: IHeaderMenu[] = [
   {
-    title: '首页1',
+    title: '首页',
     path: '/',
     type: 'Home',
     icon: h(FaSolidDotCircle),
@@ -60,21 +58,21 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidHistory),
     path: '/timeline',
     subMenu: [
-      {
-        title: '生活',
-        icon: h(FaSolidFeatherAlt),
-        path: '/timeline?type=note',
-      },
-      {
-        title: '博文',
-        icon: h(IonBook),
-        path: '/timeline?type=post',
-      },
-      {
-        title: '回忆',
-        icon: h(FaSolidCircle),
-        path: '/timeline?memory=1',
-      },
+      // {
+      //   title: '生活',
+      //   icon: h(FaSolidFeatherAlt),
+      //   path: '/timeline?type=note',
+      // },
+      // {
+      //   title: '博文',
+      //   icon: h(IonBook),
+      //   path: '/timeline?type=post',
+      // },
+      // {
+      //   title: '回忆',
+      //   icon: h(FaSolidCircle),
+      //   path: '/timeline?memory=1',
+      // },
       {
         title: '专栏',
         path: '/notes/topics',
