@@ -55,7 +55,7 @@
           },
           {
             "name": "GitHub",
-            "href": "https://github.com/innei",
+            "href": "https://github.com/Peek-A-Booo",
             "external": true
           }
         ]
@@ -86,7 +86,7 @@
           },
           {
             "type": "h1",
-            "text": "Innei",
+            "text": "Ethan",
             "class": "font-medium mx-2 text-4xl"
           },
           {
@@ -113,7 +113,7 @@
           }
         ]
       },
-      "description": "An independent developer coding with love."
+      "description": "A person who loves coding and wants to become an independent developer."
     },
     "module": {
       "donate": {
