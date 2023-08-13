@@ -32,10 +32,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
         title: '自述',
         path: '/about-me',
       },
-      {
-        title: '此站点',
-        path: '/about-site',
-      },
     ],
   },
   {
