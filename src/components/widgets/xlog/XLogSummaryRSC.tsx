@@ -1,8 +1,5 @@
 import { clsxm } from '~/lib/helper'
 
-export const getCidForBaseModel = (data: any) => {
-  return data?.meta?.xLog?.cid
-}
 const headers = {
   referer: `https://link.bilibili.com/p/center/index?visit_id=22ast2mb9zhc`,
   'User-Agent': `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Shiro`,
@@ -28,6 +25,7 @@ const fetchData = async (cid: string, lang = 'zh') => {
     .then((res) => res.json())
     .catch(() => null)
 }
+
 export const XLogSummary = async (
   props: ComponentType<{
     cid: string
