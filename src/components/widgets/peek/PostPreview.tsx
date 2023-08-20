@@ -19,8 +19,9 @@ import {
 import { WrappedElementProvider } from '~/providers/shared/WrappedElementProvider'
 import { queries } from '~/queries/definition'
 
-import { SummarySwitcher } from '../ai/SummarySwitcher'
 import { PostOutdate } from '../post'
+import { XLogSummary } from '../xlog'
+import { getCidForBaseModel } from '../xlog/utils'
 
 interface PostPreviewProps {
   category: string
@@ -43,11 +44,8 @@ export const PostPreview: FC<PostPreviewProps> = (props) => {
             <h1 className="text-center">
               <Balancer>{data.title}</Balancer>
             </h1>
-
             <PostMetaBarInternal className="mb-8 justify-center" />
-
-            <SummarySwitcher data={data} />
-
+            <XLogSummary cid={getCidForBaseModel(data)} />
             <PostOutdate />
           </header>
           <WrappedElementProvider>
